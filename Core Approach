@@ -1,0 +1,12 @@
+import the required libraries
+retrieve the UNIVERSAL SENTENCE ENCODER model 
+load the data
+Encoding text to vectors:
+  We have used USE version 4. It is trained on the whole wikipedia data. Our Sentence have a sequence of words. 
+  we give this sentence to our model (USE4), it gives us a "dense numeric vector". Here, we passed sentence pair and got a vector pair.
+Finding Cosine similarity:
+  a for loop for all the sentence pair present in our data and found the vector representation of our sentences. 
+  For each vector pair, we found the cosine between the by using usual cosine formula. i.e.
+  cosin = dot(a,b)/norm(a)*norm(b)
+  we get the value ranging from -1 to 1. But, we need values ranging from 0 to 1 hence we will add 1 to the cosine similarity value and then normalizze it.
+RESULT is the cosine similarity between two vectors i.e STS
