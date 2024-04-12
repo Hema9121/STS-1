@@ -1,0 +1,11 @@
+Flask
+gunicorn
+numpy
+scipy
+sklearn==0.0
+Scikit-Learn
+matplotlib
+pandas
+nltk
+tensorflow
+tensorflow_hub

@@ -1,0 +1,28 @@
+<!doctype html>  
+<html>  
+<style>
+body {
+    text-align: center;
+    background-color: rgb(224, 197, 109);
+}
+table {
+    display: inline-block;
+    border-collapse: collapse;
+}
+</style>
+   <body>  
+      <p><strong>Similarity between the Pair of Text Paras</strong></p> 
+      {% for key, value in result.items() %} 
+      <p>{{ key }}: {{ value }}</p>
+      {% endfor %}
+      <!--<table border = 1>  
+         {% for key, value in result.items() %}  
+            <tr>  
+               <th> {{ key }} </th>  
+               <td> {{ value }} </td>  
+            </tr>  
+         {% endfor %}  
+      </table>-->
+
+   </body>  
+</html>

@@ -1,0 +1,20 @@
+<html>  
+<style> 
+body {
+    text-align: center;
+    background-color: rgb(205, 134, 203);
+}
+form {
+    display: inline-block;
+}
+</style>
+   <body>  
+        
+       <h3>Semantic Textual Similarity</h3>  
+      <form action = "{{ url_for('predict')}}" method = "POST">
+         <p><strong>Please, enter the text</strong></p>
+         <textarea name="message" rows="30" cols="100"></textarea>
+         <p><input type = "submit" value = "predict" /></p>  
+      </form>  
+   </body>  
+</html>
